@@ -36,6 +36,8 @@ $\operatorname{Pr}[M(X) \in T] \leq \exp (k \varepsilon) \operatorname{Pr}\left[
 
 $\Delta_{2}^{(f)}=\max _{X, X^{\prime}}\left\|f(X)-f\left(X^{\prime}\right)\right\|_{2}$
 
+
+
 高斯分布公式及曲线：
 
 $p(x)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} \exp \left(-\frac{(x-\mu)^{2}}{2 \sigma^{2}}\right)$
