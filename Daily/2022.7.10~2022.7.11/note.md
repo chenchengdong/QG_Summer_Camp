@@ -22,12 +22,9 @@ lec2承接lec1中提到的通过信息聚合（Aggregation）来保护隐私，�
 
 lec3开始介绍差分隐私算法，首先是随机应答，在分析师请求某个隐私数据时，如果不添加噪声，就会使得数据隐私得不到保护，如果进行随机应答，当应答概率为1/2时，这时变成了一个完全随机的二项分布，这时隐私的保护性是很强，但是数据的可用性已经失去，故该方法不可用。所以当随机应答概率为
 
-$Y_{i}=\left\{\begin{array}{ll}
-X_{i} & \text { with probability } 1 / 2+\gamma \\
-1-X_{i} & \text { with probability } 1 / 2-\gamma
-\end{array}\right.$
+![](https://ccd123.oss-cn-guangzhou.aliyuncs.com/img/20220717085018.png)
 
-$\gamma \in[0,1 / 2]$
+
 
 时，可以起到保护隐私的作用,一般用于*非数值查询*，可以通过知道随机给出错误答案的概率来获得剩下的真实数据，然后用剩下的数据作为样本估计全局的数据所具有的特征
 
@@ -37,7 +34,7 @@ $\gamma \in[0,1 / 2]$
 
 这里满足公式
 
-$\operatorname{Pr}[M(X) \in T] \leq e^{\varepsilon} \operatorname{Pr}\left[M\left(X^{\prime}\right) \in T\right]$
+![](https://ccd123.oss-cn-guangzhou.aliyuncs.com/img/20220717085218.png)
 
 ### 差分隐私的性质
 
