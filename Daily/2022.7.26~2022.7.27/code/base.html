@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+            用户中心
+    {% endblock %}</title>
+<style>
+
+</style>
+{% block mycss %}
+
+{% endblock %}
+</head>
+<body>
+<div id="header">
+    <ul>
+        <li><a href=""></a>首页</li>
+        <li><a href=""></a>秒杀</li>
+        <li><a href=""></a>超市</li>
+        <li><a href=""></a>图书</li>
+        <li><a href=""></a>会员</li>
+    <ul>
+</div>
+
+<div id="middle">
+    {% block middle %}
+    
+    {% endblock %}
+</div>
+<div id="footer"></div>
+
+{% block myjs %}
+
+{% endblock %}
+</body>
+</html>
